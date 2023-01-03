@@ -8,8 +8,7 @@ int wmain()
 	printf("Press any key to start\n");
 	getchar();
 
-	BYTE* pByte = new BYTE;
-	*pByte = 50;
+	BYTE* pByte = new BYTE(50);
 	delete pByte;
 	delete pByte;
 	printf("Done...exiting application\n");
