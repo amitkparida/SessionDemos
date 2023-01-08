@@ -25,7 +25,6 @@ int main()
     {
         TestMethod();
     }
-
     // catch block will not be executed for /EHsc or /EHs. catch block will be executed for /EHa
     catch (...)
     {
@@ -57,7 +56,6 @@ int main()
 //    {
 //        TestMethod();
 //    }
-//
 //    // __except will catch the exception here. (You can also use only __except(EXCEPTION_EXECUTE_HANDLER) below)
 //    __except (GetExceptionCode() == EXCEPTION_INT_DIVIDE_BY_ZERO ? EXCEPTION_EXECUTE_HANDLER : EXCEPTION_CONTINUE_SEARCH)
 //    {
