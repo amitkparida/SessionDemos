@@ -8,7 +8,7 @@ namespace stack_heap
 {
     class Program
     {
-        static string getString()
+        static string GetString()
         {
             string str = "My String";
             return str;
@@ -16,7 +16,7 @@ namespace stack_heap
 
         static void Main(string[] args)
         {
-            string mystr = getString();
+            string mystr = GetString();
             Console.WriteLine($"String = {mystr}");
         }
     }

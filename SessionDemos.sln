@@ -11,11 +11,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemoryLimit", "MemoryLimit\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemoryConcepts", "MemoryConcepts\MemoryConcepts.vcxproj", "{93A5E770-BC51-49ED-B0FA-6395D3258998}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpStackHeap", "CSharpStackHeap\CSharpStackHeap.csproj", "{ECB62DBB-4FDF-4F3C-BA10-94ADC973CEF9}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Deadlock", "Deadlock\Deadlock.vcxproj", "{771B70B9-AF62-4FE6-A5A6-71E2EFD2E814}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.vcxproj", "{770DA10C-1291-40E0-B1CB-7D38A8DB6D06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet_StackHeap", "DotNet_StackHeap\DotNet_StackHeap.csproj", "{E0B83710-9D15-4363-BDD7-E19F09313099}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,18 +75,6 @@ Global
 		{93A5E770-BC51-49ED-B0FA-6395D3258998}.Release|x64.Build.0 = Release|x64
 		{93A5E770-BC51-49ED-B0FA-6395D3258998}.Release|x86.ActiveCfg = Release|Win32
 		{93A5E770-BC51-49ED-B0FA-6395D3258998}.Release|x86.Build.0 = Release|Win32
-		{ECB62DBB-4FDF-4F3C-BA10-94ADC973CEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ECB62DBB-4FDF-4F3C-BA10-94ADC973CEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ECB62DBB-4FDF-4F3C-BA10-94ADC973CEF9}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{ECB62DBB-4FDF-4F3C-BA10-94ADC973CEF9}.Debug|x64.Build.0 = Debug|Any CPU
-		{ECB62DBB-4FDF-4F3C-BA10-94ADC973CEF9}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{ECB62DBB-4FDF-4F3C-BA10-94ADC973CEF9}.Debug|x86.Build.0 = Debug|Any CPU
-		{ECB62DBB-4FDF-4F3C-BA10-94ADC973CEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ECB62DBB-4FDF-4F3C-BA10-94ADC973CEF9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ECB62DBB-4FDF-4F3C-BA10-94ADC973CEF9}.Release|x64.ActiveCfg = Release|Any CPU
-		{ECB62DBB-4FDF-4F3C-BA10-94ADC973CEF9}.Release|x64.Build.0 = Release|Any CPU
-		{ECB62DBB-4FDF-4F3C-BA10-94ADC973CEF9}.Release|x86.ActiveCfg = Release|Any CPU
-		{ECB62DBB-4FDF-4F3C-BA10-94ADC973CEF9}.Release|x86.Build.0 = Release|Any CPU
 		{771B70B9-AF62-4FE6-A5A6-71E2EFD2E814}.Debug|Any CPU.ActiveCfg = Debug|x64
 		{771B70B9-AF62-4FE6-A5A6-71E2EFD2E814}.Debug|Any CPU.Build.0 = Debug|x64
 		{771B70B9-AF62-4FE6-A5A6-71E2EFD2E814}.Debug|x64.ActiveCfg = Debug|x64
@@ -111,6 +99,18 @@ Global
 		{770DA10C-1291-40E0-B1CB-7D38A8DB6D06}.Release|x64.Build.0 = Release|x64
 		{770DA10C-1291-40E0-B1CB-7D38A8DB6D06}.Release|x86.ActiveCfg = Release|Win32
 		{770DA10C-1291-40E0-B1CB-7D38A8DB6D06}.Release|x86.Build.0 = Release|Win32
+		{E0B83710-9D15-4363-BDD7-E19F09313099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0B83710-9D15-4363-BDD7-E19F09313099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0B83710-9D15-4363-BDD7-E19F09313099}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E0B83710-9D15-4363-BDD7-E19F09313099}.Debug|x64.Build.0 = Debug|Any CPU
+		{E0B83710-9D15-4363-BDD7-E19F09313099}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E0B83710-9D15-4363-BDD7-E19F09313099}.Debug|x86.Build.0 = Debug|Any CPU
+		{E0B83710-9D15-4363-BDD7-E19F09313099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0B83710-9D15-4363-BDD7-E19F09313099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0B83710-9D15-4363-BDD7-E19F09313099}.Release|x64.ActiveCfg = Release|Any CPU
+		{E0B83710-9D15-4363-BDD7-E19F09313099}.Release|x64.Build.0 = Release|Any CPU
+		{E0B83710-9D15-4363-BDD7-E19F09313099}.Release|x86.ActiveCfg = Release|Any CPU
+		{E0B83710-9D15-4363-BDD7-E19F09313099}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
