@@ -20,7 +20,6 @@ int main() {
 	//Intiallize first 10 integers
 	for (int i = 0; i < 10; ++i)
 	{
-
 		pArr[i] = (i + 1) * 100;
 	}
 
