@@ -10,6 +10,17 @@
 // Visual Studio (Project Properties -> C/C++ -> Code Generation -> Modify the Enable C++ Exceptions to “Yes With SEH Exceptions”).
 // So the below program would not crash if / EHa compiler option is used, as the exception will be caught.
 
+// Important Notes:
+//
+// __except(EXCEPTION_EXECUTE_HANDLER) can catch exceptions raised by RaiseException API, e.g. RaiseException(EXCEPTION_CODE_1, 0, 2, NULL); 
+// __except(EXCEPTION_EXECUTE_HANDLER) can also catch hardware exceptions. 
+// __except(EXCEPTION_EXECUTE_HANDLER) cannot catch exceptions thrown by C++ throw.
+// Hardware exptions are not thrown/raised by RaiseException or throw. They are directly raised by Processor.
+// By default, C++ catch(...) can catch exceptions thrown by only C++ throw.
+// By default, C++ catch(...) cannot catch Hardware Exceptions or any exception raised by RaiseException.
+// If you enable /EHa, C++ catch(...) can catch hardware exceptions, as well as exceptions raised by RaiseException (and by C++ throw obviously)
+
+
 #include <iostream>
 using namespace std;
 
