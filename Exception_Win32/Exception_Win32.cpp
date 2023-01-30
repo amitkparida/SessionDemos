@@ -19,9 +19,9 @@ int main()
         TestMethod(NULL);
     }
     __except (EXCEPTION_EXECUTE_HANDLER) {
-        printf("Exception was caught: 0x%X", GetExceptionCode());
+        printf("Exception was caught: 0x%X \n", GetExceptionCode());
     }
 
-    printf("Didn't crash");
-    getchar();
+    printf("Did not crash\n"); 
+    //getchar();
 }
