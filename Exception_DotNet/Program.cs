@@ -71,6 +71,8 @@ namespace Exception_DotNet
 //        {
 //            int output = 0;
 
+//            Console.WriteLine("Open Database Connection");
+
 //            //try
 //            //{
 //            output = Fun2(position);
@@ -78,6 +80,10 @@ namespace Exception_DotNet
 //            //catch (Exception ex)
 //            //{
 //            //    throw new ArgumentException("You passed in bad data", ex);
+//            //}
+//            //finally
+//            //{
+//            //    Console.WriteLine("Close Database Connection");
 //            //}
 
 //            return output;
