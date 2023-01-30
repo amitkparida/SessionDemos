@@ -54,6 +54,14 @@ namespace Exception_DotNet
 //                Console.WriteLine(ex.Message);
 //                Console.WriteLine(ex.GetType());
 //                Console.WriteLine(ex.StackTrace);
+
+//                var inner = ex.InnerException;   
+//                while (inner != null)
+//                {
+//                    Console.WriteLine(inner.GetType());
+//                    Console.WriteLine(inner.StackTrace);
+//                    inner = inner.InnerException;
+//                }
 //            }
 
 //            Console.ReadLine();
