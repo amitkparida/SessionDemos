@@ -11,38 +11,38 @@
 
 
 
-//#define _CRT_SECURE_NO_WARNINGS
-////#pragma warning(disable:4996)
-//
-//#include <windows.h>
-//#include <stdio.h>
-//#define MAX_CONN_LEN 5
-//
-//void HelperFunction(char* pszConnectionString){
-//	char szCopy[MAX_CONN_LEN];
-//	strcpy(szCopy, pszConnectionString);
-// 
-// 	// use a secure CRT function to help prevent buffer overruns
-//	// truncate string to fit into destination buffer
-//	// strncpy_s(szCopy, _countof(szCopy), pszConnectionString, _TRUNCATE);
-//
-//	//
-//	// ...
-//	// Establish connection
-//	// ...
-//	//
-//}
-//
-//int main(){
-//	char szStr[MAX_CONN_LEN];
-//	
-//	printf("Please specify connection string on the command line:\n");
-//	scanf("%[^\n]", szStr);
-//	HelperFunction(szStr);
-//	//printf("Connection to %s established\n", szStr);
-//
-//	return 0;
-//}
+#define _CRT_SECURE_NO_WARNINGS
+//#pragma warning(disable:4996)
+
+#include <windows.h>
+#include <stdio.h>
+#define MAX_CONN_LEN 5
+
+void HelperFunction(char* pszConnectionString){
+	char szCopy[MAX_CONN_LEN];
+	strcpy(szCopy, pszConnectionString);
+ 
+ 	// use a secure CRT function to help prevent buffer overruns
+	// truncate string to fit into destination buffer
+	// strncpy_s(szCopy, _countof(szCopy), pszConnectionString, _TRUNCATE);
+
+	//
+	// ...
+	// Establish connection
+	// ...
+	//
+}
+
+int main(){
+	char szStr[MAX_CONN_LEN];
+	
+	printf("Please specify connection string on the command line:\n");
+	scanf("%[^\n]", szStr);
+	HelperFunction(szStr);
+	//printf("Connection to %s established\n", szStr);
+
+	return 0;
+}
 
 
 
@@ -54,21 +54,22 @@
 // In stack, int x memory is allicated next to the buffer. So, int x memory will be overwritten (as 'a' or 97) when crashArray buffer overflows.
 // This will cause infinite loop.
 
-#include <iostream>
 
-void func()
-{
-	std::cout << "going to loop forever" << std::endl;
-
-	char crashArray[100];
-	for (int x = 0; x <= 100; ++x) {
-		*(crashArray + x) = 'a';
-	}
-
-	std::cout << "should not reach here" << std::endl;
-}
-
-int main()
-{
-	func();
-}
+//#include <iostream>
+//
+//void func()
+//{
+//	std::cout << "going to loop forever" << std::endl;
+//
+//	char crashArray[100];
+//	for (int x = 0; x <= 100; ++x) {
+//		*(crashArray + x) = 'a';
+//	}
+//
+//	std::cout << "should not reach here" << std::endl;
+//}
+//
+//int main()
+//{
+//	func();
+//}
