@@ -1,9 +1,9 @@
 
 // https://amitkparida.medium.com/structured-exception-handling-in-visual-c-618b9e792faa
 
-// Exceptions like Access Violation, Divide by Zero are hardware exceptions.With / EHsc(default) or /EHs compiler options, 
-// C++ does not handle these hardware exceptions using standard C++ Exception Handling(try and catch block).
-// So the below program would crash due to unhandled hardware exception, if / EHsc(default) or /EHs compiler option is used.
+// Exceptions like Access Violation, Divide by Zero are hardware exceptions. With /EHsc(default) or /EHs compiler options, 
+// C++ does not handle these hardware exceptions using standard C++ Exception Handling (try and catch block).
+// So the below program would crash due to unhandled hardware exception, if /EHsc(default) or /EHs compiler option is used.
 
 // There is a very easy way to catch both standard C++ exceptions (software exceptions) and hardware exceptions 
 // using C++ Exception handling tryand catch block.Just enable / EHa compiler option in the project settings in 
