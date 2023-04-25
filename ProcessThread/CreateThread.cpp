@@ -13,10 +13,23 @@ void fun4(int, int, int);
 
 int main()
 {
-	DWORD dwThread1ID;
+	DWORD dwThreadId;
 	HANDLE hHandle;
 
-	hHandle = CreateThread(NULL, 0, ThreadFunc, NULL, 0, &dwThread1ID);
+	hHandle = CreateThread(
+						NULL,				// default security attributes
+						0,					// use default stack size 
+						ThreadFunc,			// thread function
+						NULL,				// argument to thread function
+						0,					// use default creation flags
+						&dwThreadId			// returns the thread identifier
+						);
+	if (hHandle == NULL)
+	{
+		printf("CreateThread() failed, error: %d.\n", GetLastError());
+
+		return -1;
+	}
 
 	fun1();
 
@@ -33,11 +46,10 @@ DWORD WINAPI ThreadFunc(PVOID pvParam)
 	while (iCount < 20)
 	{
 		Sleep(100);
-		printf("\n Secondary thread prints %d", iCount);
-		iCount += 1;
+		printf("\n Secondary thread prints %d", iCount++);
 	}
 
-	MessageBoxA(NULL, "ThreadFunc1 : Secondary Thread", "Caption", 0);
+	MessageBoxA(NULL, "ThreadFunc : Secondary Thread", "Caption", 0);
 
 	return 0;
 }
