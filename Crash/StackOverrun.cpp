@@ -1,4 +1,6 @@
-//Stack Overruns
+//Stack Buffer Overrun
+
+// Debugging Stack Corruption/Overruns : https://www.timdbg.com/posts/debugger-lies-part-1/
 
 // Note:
 // In case of stack buffer overrun, the hackers can take control over the Return Address (by placing the address of their malicious function in place of the Return Address in stack)
