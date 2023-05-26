@@ -3,7 +3,7 @@
 // Debugging Stack Corruption/Overruns : https://www.timdbg.com/posts/debugger-lies-part-1/
 
 // Note:
-// In case of stack buffer overrun, the hackers can take control over the Return Address 
+// In case of stack buffer overrun, the hackers/attackers can take control over the Return Address 
 // (by placing the address of their malicious function in place of the Return Address in stack)
 
 // In order to prevent stack buffer overrun, VC++ compiler uses /GS(Guard Stack) switch by default. 
@@ -12,8 +12,8 @@
 
 // The /GS compiler option does not protect against all buffer overrun security attacks. 
 // For example, if you have a VPTR and a buffer in an object, a buffer overrun could corrupt the VPTR.
-// (VPTR is most typically located at very beginning of object). Hacker can create his own VTABLE, 
-// and overwrite the VPTR to point to his VTABLE.
+// (VPTR is most typically located at very beginning of object). Hacker/Attacker can create his own VTABLE, 
+// and overwrite the VPTR to point to his VTABLE. See https://defuse.ca/exploiting-cpp-vtables.htm .
 // Even if you use /GS, always try to write secure code that has no buffer overruns.
 
 
