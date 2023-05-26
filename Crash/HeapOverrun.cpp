@@ -1,5 +1,10 @@
 //Heap Overruns and Underruns
 
+// Heap Overruns can cause security issues.
+// For example, you allocate a class object in heap. If you have a VPTR and a buffer in the object, 
+// a buffer overrun could corrupt the VPTR. (VPTR is most typically located at very beginning of object). 
+// Hacker can create his own VTABLE, and overwrite the VPTR to point to his VTABLE
+
 #define _CRT_SECURE_NO_WARNINGS
 //#pragma warning(disable:4996)
 
